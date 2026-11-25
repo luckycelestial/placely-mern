@@ -1,5 +1,8 @@
+import Login from './Login.jsx';
 export default function App(){
   return(
-    <div>Initial Commit</div>
+    <div>
+    <Login></Login>
+    </div>
   );
 }
