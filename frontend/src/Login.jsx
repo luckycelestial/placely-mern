@@ -1,3 +1,5 @@
+import { Link } from 'react-router';
+
 export default function Login(){
     return(
     <div className="flex flex-row">
@@ -8,7 +10,7 @@ export default function Login(){
         </header>
         </div>
         <div className="w-1/2 h-screen border-2 border-blue-500">
-            <a href="">Login with Google</a>
+            <Link to="/dashboard">Login with Google</Link>
         </div>
     </div>
     );
