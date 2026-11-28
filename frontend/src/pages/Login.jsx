@@ -18,7 +18,7 @@ export default function Login() {
 
   function onSubmit(data) {
     localStorage.setItem('userEmail', data.email);
-    navigate('/dashboard');
+    navigate('/student/dashboard');
   }
 
   return (
@@ -35,12 +35,12 @@ export default function Login() {
 
       <div className="w-1/2 h-screen border-2 border-blue-500">
         <div className="p-4 font-bold bg-blue-700 text-4xl text-green-500 border border-gray rounded-md mx-auto max-h-5xl">
-          <Link to="/dashboard">Login with Google</Link>
+          <Link to="/student/dashboard">Login with Google</Link>
         </div>
 
         <form onSubmit={handleSubmit(onSubmit)}>
           <div>
-            <label htmlFor="email">Email</label>
+            <label   htmlFor="email">Email</label>
             <input id="email" type="email" {...register('email')} />
             {errors.email && <p>{errors.email.message}</p>}
           </div>

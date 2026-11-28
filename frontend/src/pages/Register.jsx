@@ -18,7 +18,7 @@ export default function Register() {
 
   function onSubmit(data) {
     localStorage.setItem('userEmail', data.email);
-    navigate('/dashboard');
+    navigate('/student/dashboard');
   }
 
   return (
